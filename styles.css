@@ -1,0 +1,61 @@
+html {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f3ee;
+}
+
+
+.top-bar {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    left: 0px;
+    background-color: #463f3a;
+    font-size: 20px;
+    z-index: 9999;
+    margin: auto;
+    overflow-y: hidden;
+}
+.top-bar a{
+    color: #f2e9e4;
+    text-decoration: none;
+    padding-right: 5;
+}
+
+.top-bar .nav{
+    position: absolute; 
+    width: 75%; 
+    left: 25%; 
+    text-align: center;
+}
+.logo {
+    position: absolute; 
+    width: 25%; 
+    height: 75%; 
+    top: 15%;
+    left: 0%;  
+    object-fit: contain;
+}
+
+
+.img-container {
+    position: absolute; /* Positioning context for absolute positioning */
+    width: 100%;
+    height: 400px; /* Set the height of the container */
+    left: 0px;
+    background-image: url('https://www.moonpalace.com/jade_47c156df03.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    color: white; /* Text color */
+    text-align: center; /* Center-align the content */
+}
+
+/* CSS for the content */
+.content {
+    position: absolute; /* Position the content absolutely */
+    top: 50%; /* Position the content 50% from the top of the container */
+    left: 50%; /* Position the content 50% from the left of the container */
+    transform: translate(-50%, -50%); /* Center the content horizontally and vertically */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color for better readability */
+    padding: 20px; /* Padding around the content */
+}
