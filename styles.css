@@ -53,39 +53,69 @@ img:hover{
     filter: brightness(0.7);
 }
 
+@media screen and (max-width: 8024px) {
+    .top-bar {
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(1, 100%);
+        height: 100px;
+    }
+    .top-bar .logo {
+        height: 100%;  
+    }
+    .top-bar .nav p{
+        font-size: 20px;
+    }
+  }
 
+@media screen and (max-width: 800px) {
+    .top-bar {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(2, 50%);
+        height: 300px;
+    }
+   
+    .top-bar .logo {
+        height: 100%;  
+    }
+    .top-bar .nav p{
+        font-size: 30px;
+    }
+}
 .top-bar {
     position: fixed;
+    display: grid;
     width: 100%;
-    height: 100px;
-    line-height: 100px;
     top: 0px;
     left: 0px;
     background-color: #463f3a;
     font-size: 15px;
     z-index: 9999;
-    margin: auto;
+    margin: 0;
+    padding: 0;
     overflow-y: hidden;
-}
-.top-bar a{
-    text-decoration: none;
-    font-weight: bolder;
-    padding-right: 10;
-}
-.top-bar .nav{
-    position: absolute; 
-    width: 75%; 
-    left: 25%; 
-    text-align: center;
+    overflow-x: hidden;
 }
 .top-bar .logo {
+    position: relative;
     animation: onLoad 1s ease forwards;
-    position: absolute; 
-    width: 25%; 
-    height: 75%; 
-    top: 15%;
-    left: 0%;  
+    width: 100%; 
     object-fit: contain;
+}
+.top-bar .nav{
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.top-bar .nav a{
+    text-decoration: none;
+    padding-left: 10;
+}
+.top-bar .nav p{
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
 }
 
 
