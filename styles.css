@@ -17,6 +17,7 @@ body{
 }
 
 button {
+    animation: onLoad 1s ease forwards;
     color: #f4f3ee;
     background-color: #8a817c;
     border-width: 0px 0px;
@@ -42,6 +43,7 @@ a:hover{
 }
 
 img{
+    animation: onLoad 1s ease forwards;
     filter: brightness(1);
     transition: filter 1s ease;
 }
@@ -58,13 +60,12 @@ img:hover{
     top: 0px;
     left: 0px;
     background-color: #463f3a;
-    font-size: 20px;
+    font-size: 15px;
     z-index: 9999;
     margin: auto;
     overflow-y: hidden;
 }
 .top-bar a{
-    
     text-decoration: none;
     font-weight: bolder;
     padding-right: 10;
@@ -93,6 +94,7 @@ img:hover{
 
 
 .section-1 {
+    
     position: absolute;
     width: 100%;
     height: 800px;
@@ -104,6 +106,7 @@ img:hover{
     text-align: center;
 }
 .content {
+    animation: onLoad 1s ease forwards;
     position: absolute; 
     top: 50%;
     left: 50%;
@@ -175,11 +178,11 @@ img:hover{
 
 @keyframes onLoad {
     from {
-      opacity: 0%;
-      transform: scale(1.101);
+        opacity: 0%;
+
     }
     to {
-      opacity: 100%;
-      transform: scale(1);
+        opacity: 100%;
+
     }
 }
