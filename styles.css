@@ -4,6 +4,13 @@ html {
     margin: 0px;
 }
 
+* {
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
 body{
     position: absolute;
     height: 2000px;
@@ -59,26 +66,16 @@ img:hover{
         grid-template-rows: repeat(1, 100%);
         height: 100px;
     }
-    .top-bar .logo {
-        height: 100%;  
-    }
-    .top-bar .nav p{
-        font-size: 20px;
-    }
   }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .top-bar {
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(2, 50%);
-        height: 300px;
+        height: 200px;
     }
-   
-    .top-bar .logo {
-        height: 100%;  
-    }
-    .top-bar .nav p{
-        font-size: 30px;
+    .top-bar .nav{
+        flex-direction: column;
     }
 }
 .top-bar {
@@ -99,23 +96,30 @@ img:hover{
     position: relative;
     animation: onLoad 1s ease forwards;
     width: 100%; 
+    height: 100%;
     object-fit: contain;
 }
 .top-bar .nav{
-    margin: 0;
     display: flex;
+    margin: 0;
+    padding: 0;   
+    line-height: 100px;
     width: 100%;
     height: 100%;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-style: dotted;
+    border-width: 4 4;
 }
 .top-bar .nav a{
     text-decoration: none;
-    padding-left: 10;
+    align-self: center;
+    flex: 12.5%;
+
 }
 .top-bar .nav p{
-    text-decoration: none;
-    font-weight: bolder;
     text-align: center;
-    width: 100%;
 }
 
 
