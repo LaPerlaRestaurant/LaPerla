@@ -67,7 +67,7 @@ img:hover{
     }
   }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     .top-bar {
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(2, 50%);
