@@ -23,6 +23,8 @@ button {
     border-width: 0px 0px;
     transition: color 0.5s ease;
     transition: background-color 0.5s ease;
+    width: 120px; 
+    height: 60px;
 }
 button:hover{
     color: #8a817c;
@@ -154,7 +156,7 @@ img:hover{
     line-height: 2;
     height: 100%;
     width: 100%;
-    padding-top: 80px;
+    padding-top: 60px;
     text-align: center;
 }
 .bottom .links a{
