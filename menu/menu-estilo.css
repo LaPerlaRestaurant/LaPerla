@@ -7,6 +7,19 @@
     z-index: -9999;
 }
 
+
+.content {
+    animation: onLoad 1s ease forwards;
+    position: relative; 
+    align-self: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+
 .menu-section{
     display: flex;;
     flex-wrap: nowrap;
@@ -19,6 +32,7 @@
     background-color: #f4f3ee;
 }
 
+
 .menu-subsection{
     display: flex;;
     flex-wrap: nowrap;
@@ -27,8 +41,8 @@
     width: 100%;
     overflow-x: scroll;
     background-color: #463f3a;
-    
 }
+
 
 .menu-img{
     object-fit: cover;
@@ -39,17 +53,20 @@
     padding-bottom: 15px;
     padding-left: 15px;
     animation: loadScroll 4s ease forwards;
-    
 }
+
 
 .menu-section .subsection-title h1{
     text-align: center;
     align-content: center;
     color: #f4f3ee;
 }
+
+
 .menu-section .subsection-title p{
     color: #f4f3ee;
 }
+
 
 .subsection-title{
     display: flex;
@@ -61,15 +78,22 @@
     background-color: #8a817c;
 }
 
-.content {
-    animation: onLoad 1s ease forwards;
-    position: relative; 
+
+.ordenar {
+    padding: 10px;
+    height: 400px; 
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-content: center;
+}
+
+.ordenar button{
     align-self: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    margin-bottom: 10px;
+    width: 50%;
+    height: 50%;
 }
 
 
