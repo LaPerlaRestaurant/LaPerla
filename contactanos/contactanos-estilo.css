@@ -1,12 +1,16 @@
 .parallax{
     position: relative;
     height: 500px;
-    background-image: url("../inicio/evento.jpg");
+    background-image: url("cover.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -9999;
 }
 
+
+img{
+    border-radius: 20px;
+}
 
 .content {
     animation: onLoad 1s ease forwards;
@@ -19,10 +23,14 @@
     padding: 20px;
     color: #f4f3ee;
 }
+.content h2{
+    color: #f4f3ee;
+}
 
 
-.section-1 h1{
-    color: #8a817c;
+.section-1{
+    background-color: #463f3a;
+    padding: 10px;
 }
 
 
@@ -34,6 +42,33 @@
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+.section-2 h1, h2{
+    color: #8a817c;
+}
+.section-2 img{
+    height: 100px;
+    object-fit: contain;
+    
+}
+
+
+input[type=text], input[type=email], textarea{
+    background-color: transparent;
+    color: #f4f3ee;
+    min-height: 50px;
+    border-radius: 10px;
+    border: 2px solid #f4f3ee;
+    box-shadow: 0px;
+    margin-top: 5px;
+    padding: 10px;
+}
+input[type=submit] {
+    width: 100%;
+    margin-top: 5px;
+}
+::placeholder{
+    color: #bcb8b1;
 }
 
 

@@ -32,9 +32,9 @@
 	<div>
 		<div class="parallax">
             <div class="content">
-                <h1>Contáctanos</h1>
+                <h1>Servicio al cliente</h1>
 				<h2>
-					"Un oasis culinario donde la elegancia y la pasión por la comida italiana se fusionan para crear una experiencia gastronómica inolvidable."
+					Estamos para servirte
 				</h2>
             </div>
         </div>
@@ -42,35 +42,36 @@
 		<script src="../inicio\parallax.js"></script>
 
 		<div class="section-1">
-			<h1>La Perla</h1>
-			<h1>Estamos para servirle</h1>
-		</div>
+			<h1>Envíanos un correo</h1>
 
-		<div class ="contactanos">
-			<form style="display: flex; flex-direction: column; width: 50%;">
-				<input type="text" placeholder="Nombre" id="nombre">
-				<input type="email" placeholder="Email" id="email">
-				<input type="text" placeholder="Asunto" id="asunto">
-				<textarea placeholder="Mensaje" rows="6" id="mensaje"></textarea>
-				<input type="submit" value="Enviar" id="enviar">
-			</form>
-			<img src="mesas.jpeg">
+			<div class ="contactanos">
+				<form id="emailForm" action="email.php" method="post" style="display: flex; flex-direction: column; width: 50%;">
+					<input type="text" placeholder="* Nombre" id="nombre" required>
+					<input type="email" placeholder="* Teléfono" id="correo" required>
+					<input type="text" placeholder="* Asunto" id="asunto" required>
+					<textarea placeholder="* Mensaje" rows="6" id="mensaje"></textarea required>
+					<input type="submit" value="Enviar" id="enviar">
+				</form>
+				
+				<img src="mesas.jpeg">
+			</div>
 		</div>
 
 		<div class="section-2">
-			<h1>NO DUDES EN CONTACTARNOS</h1>
-			<IMG SRC="location.jpeg" border="0" height="150" width="200"></a>
-			<p>UBICACIÓN</p>
+			<h1>Otras formas de llegar a nosotros</h1>
+			<IMG SRC="ubicacion.png"></a>
+			<h2>UBICACIÓN</h2>
 			<p>Guatemala, Guatemala zona 7</p>
-			<IMG SRC="cel.jpeg" border="0" height="150" width="150"></a>
-			<p>TELÉFONO</p>
-			<p>3001-4444</p>
-			<IMG SRC="email.jpeg" border="0" height="150" width="150"></a>
-			<p>CORREO ELETRÓNICO</p>
-			<p>laperlarestaurante24@gmail.com</p>
-			<IMG SRC="time.jpeg" border="0" height="100" width="150"></a>
-			<p>HORARIO</p>
+			<IMG SRC="horario.png"></a>
+			<h2>HORARIO</h2>
 			<p>07:00 AM-09:00 PM de lunes a sábado.</p>	
+			<IMG SRC="telefono.png"></a>
+			<h2>TELÉFONO</h2>
+			<p>+502 3343 1886</p>
+			<IMG SRC="email.png"></a>
+			<h2>CORREO ELETRÓNICO</h2>
+			<p>laperlarestaurante24@gmail.com</p>
+			
 		</div>
 
         <div class="bottom">
@@ -78,7 +79,7 @@
 			<div>
 				<img class="logo" src="../inicio/logo.png" style="width: 100%; height: 100%; object-fit: contain;"> 
 			</div>
-			
+
 			<div class="links">
 				<a href="../index.html">Inicio</a> <br>
 				<a href="">Conócenos</a><br>

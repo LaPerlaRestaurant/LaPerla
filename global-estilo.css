@@ -24,7 +24,7 @@ body{
     min-height: 100vh;
 }
 
-button {
+button, input[type=submit] {
     animation: onLoad 1s ease forwards;
     color: #f4f3ee;
     background-color: #8a817c;
@@ -35,7 +35,7 @@ button {
     height: 60px;
     border-radius: 10px;
 }
-button:hover{
+button:hover, input[type=submit]:hover {
     color: #8a817c;
     background-color: #f4f3ee;
     border-width: 0px 0px;
@@ -157,7 +157,7 @@ img:hover{
     height: 400px;
     bottom: 0px;
     left: 0px;
-    background-color: #000000;
+    background-color: black;
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
     overflow-y: hidden;
