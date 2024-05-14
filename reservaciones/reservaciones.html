@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../global-estilo.css">
+    <link rel="stylesheet" href="reservaciones-estilo.css">
+
+
+
+</head>
+<body>
+  <div class="top-bar">
+    <a href="../index.html" class="logo">
+        <img src="../inicio/logo.png" style="height: 50px;">
+    </a>
+    
+    <div class="nav">
+            <a href="../index.html">Inicio</a>
+            <a href="">Conócenos</a>
+            <a href="../menu/menu.html">Menú</a>
+            <a href="">Reservaciones</a>
+            <a href="">Ubicación</a>
+            <a href="../contactanos/contactanos.html">Contáctanos</a>
+            <a href="">Pedidos</a>    
+    </div>
+
+</div>
+
+    <div class="container">
+      <h1>Reserva una mesa</h1>
+      <div class="centrar">
+        <button onclick="window.location.href='https://forms.gle/45bYG4iQu9mF7beP7'">Reservar</button>
+      </div>
+      <img src="qr.jpeg" alt="Código QR" class="imagen-qr">
+    </div>
+
+
+    <div class="header">
+      <h1>Planifica un evento</h1>
+      <p> Bodas, fiestas de cumpleaños, baby showers, lo que tu quieras. 
+          Si quieres festejar tu día especial <br>
+          "La Perla"
+          puede ayudarte!</p>
+      <p> A continuación te presentamos nuestros servicios de eventos especiales.</p>
+    </div>
+
+  <div class="footer" style="background-image: url('boda.jpeg');"> 
+    <h2> BODAS </h2>
+    <p> En nuestro hermoso restaurante, hemos preparado un ambiente cálido y acogedor para que
+        compartan con nosotros este momento único. Desde la ceremonia hasta la recepción, nos 
+        esforzaremos para que su experiencia sea inolvidable. 
+    </p>   
+  </div>
+
+  <div class="footer" style="background-image: url('quince.jpeg');"> 
+  <h2> 15 AÑOS </h2>
+  <p> Celebra con nosotros el inicio de una nueva etapa en tu vida.</p> 
+  </div>
+
+  <div class="footer" style="background-image: url('cumpleaños.jpeg');"> 
+  <h2> CUMPLEAÑOS </h2>
+  <p>Los mejores logros se celebran en un restaurante acogedor como este. Te brindaremos 
+      rica comida, buen vino y confort para que celebres en grande siempre. Nuestro mayor
+       deseo es su felicidad, y podemos ofrecérsela en un rico manjar. Estómago contento 
+       es igual a corazón contento.”
+  </p>
+  </div>
+
+  <div class="footer" style="background-image: url('baby.jpeg');">
+  <h2> BABY SHOWERS </h2>
+  <p> Celebra con nosotros la llegada de un nuevo miembro a la familia!<p> 
+  </div>
+
+      <div class="formulario">
+          <p> Si está interesado en nuestros servicios de eventos, no dude en 
+                  hacer click en el botón de abajo y completar el formulario para 
+                  que podamos ponernos en contacto con usted lo antes posible.
+          </p>
+
+          <p> Dejanos tus datos...</p>
+          <form action="enviar.php" method="post">
+              <input class="controls" type="text" name="nombres" id="nombres" 
+              placeholder="Nombre" </input> <br>
+              <input class="controls" type="text" name="apellidos" id="apellido" 
+              placeholder="Apellido" </input> <br>
+              <input class="controls" type="email" name="correo" id="correo" 
+              placeholder="Correo electrónico" </input> <br>
+              <input class="controls" type="number" name="telefono" id="teléfono" 
+              placeholder="Teléfono" </input> <br>
+              <input class="controls" type="text" name="evento" id="evento" 
+              placeholder="Tipo de evento" </input> <br>
+              <input class="botons" type="submit" value="Enviar"> 
+          </form>    
+      </div>
+
+
+    <div class="bottom">
+      <div>
+          <img class="logo" src="../inicio/logo.png" style="width: 100%; height: 100%; object-fit: contain;"> 
+      </div>
+      <div class="links">
+          <a href="../index.html">Inicio</a> <br>
+          <a href="">Conócenos</a><br>
+          <a href="">Menú</a><br>
+          <a href="">Reservaciones</a><br>
+          <a href="">Ubicación</a><br>
+          <a href="../contactanos/contactanos.html">Contáctanos</a><br>
+          <a href="">Pedidos</a>  <br><br>
+          <a href="mailto:laperlarestaurante24@gmail.com">laperlarestaurante24@gmail.com</a>
+      </div>
+      
+      <div class="social">
+          <img class="social-img" src="../inicio/facebook.png">
+          <img class="social-img" src="../inicio/insta.png">
+          <img class="social-img" src="../inicio/tiktok.png">
+          <img class="social-img" src="../inicio/x.png">
+          <img class="social-img" src="../inicio\whatsapp.png">
+      </div>
+      
+      </div>
+
+  
+  
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+  /*  background-image: url('fondo2.jpeg'); Cambia 'fondo.jpg' por tu imagen de fondo */
+  background-color: #f4f3ee; /* Ajusta la opacidad según tus necesidades */
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto; /* Centra el contenedor */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Ajusta la opacidad según tus necesidades */
+  border-radius: 8px;
+}
+
+.container h1 {
+  text-align: center;
+  color: #333;
+}
+
+.container .centrar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container .centrar button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .centrar button:hover {
+  background-color: #121312;
+}
+
+.imagen-qr {
+  display: block;
+  margin: 20px auto;
+  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  height: 200px; /* Ajusta el tamaño según tus necesidades */
+}
+
+
+
+
+
+.header{
+  font-size: 25px;
+  padding: 2rem 3rem;
+  text-align: center; 
+  color:#ffffff; 
+  background-color: black;
+  
+}
+
+.main-content{text-align: center;
+  font-size: 25px;
+  padding: 2rem 3rem;text-align: center; 
+  color:#ffffff;
+  
+  background-color: rgba(0,0,0,0.5);
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  font-size: 25px;
+  height: 400px;
+  padding: 2rem 3rem; text-align: center;
+  color: white;
+  border: 3px solid #f9f9f9;
+  
+  background-size: cover ;
+  background-position-y: 25%;
+}
+
+
+.formulario{
+text-align: center;
+font-size: 18px;
+width: 600px;
+background: #977b21;
+padding: 30px;
+margin: auto;
+margin-top: 100px;
+border-radius: 4px;
+color: white;
+
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 4px;
+background-color: #463f3a;
+}
