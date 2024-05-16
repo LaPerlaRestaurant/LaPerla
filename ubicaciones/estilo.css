@@ -1,0 +1,25 @@
+
+.parallax{
+    position: relative;
+    height: 500px;
+    background-image: url("fondo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9999;
+}
+
+
+
+.section-2 h1{
+
+    color: #463f3a;
+}
+
+.content {
+    position: relative; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}

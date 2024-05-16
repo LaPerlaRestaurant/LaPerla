@@ -1,0 +1,179 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Factura de Restaurante La Perla</title>
+        <script src="calcular.js"></script>
+        <link rel="stylesheet" href="estilo.css">
+        
+        
+            
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="bar">
+                <img src="../inicio/logo.png">
+                <h1>Pedidos Restaurante "LA PERLA"</h1>
+            </div>
+            <div class="info">
+                <div class="subinfo" style="align-self: left;">
+                    NIT 
+                    <input type="text" name="NIT" id="idCliente" placeholder="idCliente"/>
+                    Nombre Cliente
+                    <input type="text" name="nombreCliente" id="nombreCliente" placeholder="Nombre"/>
+                    Direccion
+                    <input type="text" name="direccionCliente" id="direccionCliente" placeholder="Direccion"/>
+                    Telefono
+                    <input type="text" name="telefonoCliente" id="telefonoCliente" placeholder="Telefono"/>
+                </div>
+                <div class="subinfo" style="text-align: right;">
+                    <p>No. DTE: 0918623876123</p>
+                    <p>Direccion: Guatemala, Guatemala zona 7</p>
+                    <p>Teléfono: +502 3343 1886</p>
+                    <p>Fecha de orden: 19/05/2025</p>
+                    <p>Correo: laperlarestaurante24@gmail.com</p>
+                </div>
+            </div>
+
+
+            
+
+            
+            <table id="billTable">
+                <thead>
+                    <tr>
+                        <th>MENÚ</th>
+                        <th>Seleccionar Menú</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr> <!--Row -->
+                        <td>
+                            ENTRADAS
+                        </td>
+                        <td>
+                            <select name="entradas" onclick="crearEntradas(this)" onchange="calcularSubtotal(this)">
+                            </select>
+                        </td>
+                        <td>
+                            <input type="number" value="0" onchange="calcularSubtotal(this)">
+                        </td>
+                        <td>
+                            <input type="text" value="Q0" onchange="calcularSubtotal(this)">
+                        </td>
+                        <td>
+                            Q0.00
+                        </td>
+                    </tr>
+                    <tr> <!--Row -->
+                        <td>
+                            PLATOS FUERTES
+                        </td>
+                        <td>
+                            <select name="platos_fuertes" onclick="crearplatos_fuertes(this)" onchange="calcularSubtotal(this)">
+                            </select>
+                        </td>
+                        <td>
+                            <input type="number" value="0" onchange="calcularSubtotal(this)">
+                        </td>
+                        <td>
+                            <input type="text" value="Q0" onchange="calcularSubtotal(this)">
+                        </td>
+                        <td>
+                            Q0.00
+                        </td>
+                    </tr>
+                    <tr> <!--Row -->
+                        <td>
+                            ENSALADAS
+                        </td>
+                        <td>
+                            <select name="ensaladas" onclick="crearEnsaladas(this)" onchange="calcularSubtotal(this)">
+                            </select>
+                        </td>
+                        <td>
+                            <input type="number" value="0" onchange="calcularSubtotal(this)">
+                        </td>
+                        <td>
+                            <input type="text" value="Q0" onchange="calcularSubtotal(this)">
+                        </td>
+                        <td>
+                            Q0.00
+                        </td>
+                    </tr>
+                    <tr> <!--Row -->
+                        <td>
+                            PASTAS
+                        </td>
+                        <td>
+                            <select name="pastas" onclick="crearPastas(this)" onchange="calcularSubtotal(this)">
+                            </select>
+                        </td>
+                        <td>
+                            <input type="number" value="0" onchange="calcularSubtotal(this)">
+                        </td>
+                        <td>
+                            <input type="text" value="Q0" onchange="calcularSubtotal(this)">
+                        </td>
+                        <td>
+                            Q0.00
+                        </td>
+                    </tr>
+                    <tr> <!--Row -->
+                        <td>
+                            POSTRES
+                        </td>
+                        <td>
+                            <select name="postres" onclick="crearPostres(this)" onchange="calcularSubtotal(this)">
+                            </select>
+                        </td>
+                        <td>
+                            <input type="number" value="0" onchange="calcularSubtotal(this)">
+                        </td>
+                        <td>
+                            <input type="text" value="Q0" onchange="calcularSubtotal(this)">
+                        </td>
+                        <td>
+                            Q0.00
+                        </td>
+                    </tr>
+                    <tr> <!--Row -->
+                        <td>
+                            BEBIDAS
+                        </td>
+                        <td>
+                            <select name="bebidas" onclick="crearBebidas(this)" onchange="calcularSubtotal(this)">
+                            </select>
+                        </td>
+                        <td>
+                            <input type="number" value="0" onchange="calcularSubtotal(this)">
+                        </td>
+                        <td>
+                            <input type="text" value="Q0" onchange="calcularSubtotal(this)">
+                        </td>
+                        <td>
+                            Q0.00
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="total">Total</td>
+                        <td id="totalAmount">Q00.00</td>
+                    </tr>
+                </tfoot>
+                
+            </table>
+            <button onclick="window.print()">Imprimir</button>
+            <button onclick="enviarFactura()">Pagar</button>
+            <p>Gracias por su Compra ¡Vuelva Pronto!.</p>
+        </div>
+    </body>
+    </html>

@@ -1,0 +1,82 @@
+table thead th{
+    background-color: #8a817c;
+    color: azure;
+}
+
+table tbody td{
+    border-color: #8a817c;
+    border-width: 1px 1px 1px 1px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.total {
+    font-weight: bold;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input{
+    width: 25%;
+}
+
+
+
+
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: #463f3a;
+    width: 100%;
+    justify-content: center;
+}
+
+.bar h1{
+    
+    align-self: center;
+    width: 50%;
+}
+
+.bar img{
+    object-fit: contain;
+    width: 25%;
+    align-self: left;
+    border-radius: 20px;
+}
+
+
+
+
+.info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.subinfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.subinfo input{
+    align-self: left;
+}

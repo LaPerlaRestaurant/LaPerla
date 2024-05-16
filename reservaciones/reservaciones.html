@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservaciones</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,7 +7,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="../global-estilo.css">
     <link rel="stylesheet" href="reservaciones-estilo.css">
-
 
 
 </head>
@@ -22,12 +18,11 @@
     
     <div class="nav">
             <a href="../index.html">Inicio</a>
-            <a href="">Conócenos</a>
+            <a href="../conocenos/conocenos.html">Conócenos</a>
             <a href="../menu/menu.html">Menú</a>
-            <a href="">Reservaciones</a>
-            <a href="">Ubicación</a>
+            <a href="../reservaciones/reservaciones.html">Reservaciones</a>
+            <a href="../ubicaciones/ubicaciones.html">Ubicación</a>
             <a href="../contactanos/contactanos.html">Contáctanos</a>
-            <a href="">Pedidos</a>    
     </div>
 
 </div>
@@ -77,27 +72,23 @@
   <p> Celebra con nosotros la llegada de un nuevo miembro a la familia!<p> 
   </div>
 
-      <div class="formulario">
+  <div class="formulario">
           <p> Si está interesado en nuestros servicios de eventos, no dude en 
                   hacer click en el botón de abajo y completar el formulario para 
                   que podamos ponernos en contacto con usted lo antes posible.
           </p>
 
           <p> Dejanos tus datos...</p>
-          <form action="enviar.php" method="post">
-              <input class="controls" type="text" name="nombres" id="nombres" 
-              placeholder="Nombre" </input> <br>
-              <input class="controls" type="text" name="apellidos" id="apellido" 
-              placeholder="Apellido" </input> <br>
-              <input class="controls" type="email" name="correo" id="correo" 
-              placeholder="Correo electrónico" </input> <br>
-              <input class="controls" type="number" name="telefono" id="teléfono" 
-              placeholder="Teléfono" </input> <br>
-              <input class="controls" type="text" name="evento" id="evento" 
-              placeholder="Tipo de evento" </input> <br>
-              <input class="botons" type="submit" value="Enviar"> 
-          </form>    
-      </div>
+          <form id="emailForm">
+              <input type="text" name="nombres" id="nombres" placeholder="Nombre"> <br>
+              <input type="text" name="apellidos" id="apellido" placeholder="Apellido"> <br>
+              <input type="email" name="correo" id="correo" placeholder="Correo electrónico"> <br>
+              <input type="number" name="telefono" id="teléfono" placeholder="Teléfono"> <br>
+              <input type="text" name="evento" id="evento" placeholder="Tipo de evento"> <br>
+              <input type="submit" value="Enviar"> 
+          </form> 
+
+    </div>
 
 
     <div class="bottom">
@@ -106,12 +97,11 @@
       </div>
       <div class="links">
           <a href="../index.html">Inicio</a> <br>
-          <a href="">Conócenos</a><br>
-          <a href="">Menú</a><br>
-          <a href="">Reservaciones</a><br>
-          <a href="">Ubicación</a><br>
+          <a href="../conocenos/conocenos.html">Conócenos</a><br>
+          <a href="../menu/menu.html">Menú</a><br>
+          <a href="../reservaciones/reservaciones.html">Reservaciones</a><br>
+          <a href="../ubicaciones/ubicaciones.html">Ubicación</a><br>
           <a href="../contactanos/contactanos.html">Contáctanos</a><br>
-          <a href="">Pedidos</a>  <br><br>
           <a href="mailto:laperlarestaurante24@gmail.com">laperlarestaurante24@gmail.com</a>
       </div>
       
